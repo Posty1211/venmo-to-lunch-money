@@ -13,13 +13,13 @@ smtp-server:
 
 lunch-money:
   dryrun: false
-  api-token: ''
+  api-token: '1234567890123456789013245678901213457890'
   # Existing tags to add to created transactions.
   # TODO(billycao): Not yet supported.
-  include-tags: []
+  include-tags: [@AustinMSD]
 
-venmo-email:
-  # TODO(billycao): Extract currency from email.
+venmo-email:davisaustin542@gmail.com 
+  
   currency: 'usd'
   # If true, add 'VenmoID 000000000000000' to note of transaction.
   add-note: true
@@ -40,3 +40,5 @@ venmo-email:
     - (?:Fwd:)?(?:Re:)?\ ?(?<payee>.+)\ paid\ your\ \$(?<amount>.+)\ request
     - (?:Fwd:)?(?:Re:)?\ ?(?<payee>.+)\ paid\ you\ \$(?<amount>.+)
   memo-css-selector: 'table > tbody > tr:first-child > td:nth-child(2) > div:nth-child(2) > p'
+
+ 
